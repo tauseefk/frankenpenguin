@@ -1,0 +1,64 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-board {
+  cursor: pointer;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+#game-board div {
+  width: 16px;
+  height: 16px;
+  padding: 8px;
+}
+
+.tile {
+  display: inline-block;
+  pointer-events: none;
+  text-align: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.tile.tile-R {
+  background-color: red;
+  color: transparent;
+}
+
+.tile.tile-B {
+  background-color: black;
+  color: transparent;
+}
+
+#player-turn {
+  height: 16px;
+  vertical-align: middle;
+}
+
+#player-turn .tile.win::after {
+  content: " wins!";
+  color: black;
+  position: relative;
+  left: calc(100% + 4px);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.pointer-none {
+  pointer-events: none;
+}

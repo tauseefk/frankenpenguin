@@ -1,0 +1,30 @@
+[package]
+name = "webgl"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = { workspace = true }
+js-sys = { workspace = true }
+web-sys = { workspace = true, features = [
+    'Document',
+    'Element',
+    'HtmlCanvasElement',
+    'Window',
+    'WebGlRenderingContext',
+    'WebGl2RenderingContext',
+    'WebGlBuffer',
+    'WebGlProgram',
+    'WebGlShader',
+    'WebGlUniformLocation',
+    'HtmlDivElement',
+    'Location',
+    'UrlSearchParams',
+] }
+console_error_panic_hook = { workspace = true }
+shapes = { path = "../shapes" }
+animation = { path = "../animation" }
