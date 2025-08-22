@@ -13,4 +13,4 @@ Currently the `webgl` crate performance diff stands at:
 | 400k  | 24               | 8                  | 96         |
 | 1m    | 12               | 3                  | 28         |
 
-<img width="1377" height="649" alt="Screenshot 2025-08-21 at 5 19 42 PM" src="https://github.com/user-attachments/assets/5f09c5ff-abe1-4596-a1c9-893c403408ca" />
+https://github.com/user-attachments/assets/3a1ca212-f745-43b5-b0cb-6a4de9b5f293
