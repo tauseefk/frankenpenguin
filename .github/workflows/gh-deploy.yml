@@ -27,7 +27,7 @@ jobs:
 
       - name: Build WASM binary
         run: |
-          cd connecto.rs
+          cd frankenpenguin.rs
           chmod +x build.sh
           ./build.sh
 
